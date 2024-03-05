@@ -1,26 +1,30 @@
 {
-    "Name": "Better Peace (API 2.0)",
+    "Name": "<i><b>Better <a>Peace</b></i></a> (API 2.0)",
     "Description": "Режим мир улучшенный",
     "StartClientVersion": 334,
     "ApiVersion": 2,
     "MapLists": [
       {
-        "MapListId": 8401,
-        "Name": "Заготовки"
+        "MapListId": 324,
+        "Name": "Оффициальные"
       }
     ],
     "Parameters": {
       "Bool": [
         {
           "Name": "RedTeam",
-          "DisplayName": "Teams/Red",
+          "DisplayName": "Команда 1",
           "Default": true
         },
         {
           "Name": "BlueTeam",
-          "DisplayName": "Teams/Blue",
+          "DisplayName": "Команда 2",
           "Default": true
-        }
+        },
+        {
+          "Name": "prikol",
+          "DisplayName": "Не нажимай!",
+          "Default": true
       ]
     }
 }
