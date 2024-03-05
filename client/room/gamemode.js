@@ -1,4 +1,4 @@
-import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, LeaderBoard, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
+import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 
@@ -20,6 +20,7 @@ Damage.GetContext().DamageOut.Value = true;
 
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
+p.Properties.Get("rid").Value = p.IdInRoom
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
@@ -30,14 +31,6 @@ if (blue || !red && !blue) teams.create_team_blue();
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
-// настраиваем параметры, которые нужно выводить в лидерборде
-LeaderBoard.PlayerLeaderBoardValues = [
-	new DisplayValueHeader("Kills", "Statistics/Kills", "Statistics/KillsShort"),
-	new DisplayValueHeader("Deaths", "Statistics/Deaths", "Statistics/DeathsShort"),
-	new DisplayValueHeader("Spawns", "Statistics/Spawns", "Statistics/SpawnsShort"),
-	new DisplayValueHeader("Scores", "Statistics/Scores", "Statistics/ScoresShort")
-];
-LeaderBoard.TeamLeaderBoardValue = new DisplayValueHeader("Deaths", "Statistics\Deaths", "Statistics\Deaths");
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
 // конфигурация инвентаря
