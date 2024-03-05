@@ -12,12 +12,12 @@ export function set_editor_inventory() {
 }
 
 export function set_editor_options() {
-    Build.GetContext.PlayerId("D411BD94CAE31F89").Pipette.Value = true;
+    Build.GetContext().Pipette.Value = true;
     Build.GetContext().FloodFill.Value = true;
     Build.GetContext().FillQuad.Value = true;
     Build.GetContext().RemoveQuad.Value = true;
     Build.GetContext().BalkLenChange.Value = true;
-    Build.GetContext.PlayerId("D411BD94CAE31F89").FlyEnable.Value = true;
+    Build.GetContext().FlyEnable.Value = true;
     Build.GetContext().SetSkyEnable.Value = true;
     Build.GetContext().GenMapEnable.Value = true;
     Build.GetContext().ChangeCameraPointsEnable.Value = true;
