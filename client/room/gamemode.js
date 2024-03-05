@@ -31,6 +31,16 @@ Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); })
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 
+LeaderBoard.PlayerLeaderBoardValues = [
+
+//leaderboard
+new DisplayValueHeader("Kills", "Statistics/Kills", "Statistics/KillsShort"),
+
+new DisplayValueHeader("Deaths", "Statistics/Deaths", "Statistics/DeathsShort"),
+
+new DisplayValueHeader("Spawns", "Statistics/Spawns", "Statistics/SpawnsShort"), new DisplayValueHeader("Scores", "Statistics/Scores", "Statistics/ScoresShort")
+
+];
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
 
