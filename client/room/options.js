@@ -1,6 +1,5 @@
 import { Build, Inventory } from 'pixel_combats/room';
 
-// разрешаем все что можно для редактора
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
     roomInventory.Main.Value = false;
@@ -16,7 +15,7 @@ export function set_editor_options() {
     Build.GetContext().FloodFill.Value = false;
     Build.GetContext().FillQuad.Value = false;
     Build.GetContext().RemoveQuad.Value = true;
-    Build.GetContext().BalkLenChange.Value = true;
+    Build.GetContext().BalkLenChange.Value = false;
     Build.GetContext().FlyEnable.Value = false;
     Build.GetContext().SetSkyEnable.Value = false;
     Build.GetContext().GenMapEnable.Value = false;
