@@ -33,17 +33,9 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 
 LeaderBoard.PlayerLeaderBoardValues = [
 
-//leaderboard
-new DisplayValueHeader("Kills", "Statistics/Kills", "Statistics/KillsShort"),
-
-new DisplayValueHeader("Deaths", "Statistics/Deaths", "Statistics/DeathsShort"),
-
-new DisplayValueHeader("Spawns", "Statistics/Spawns", "Statistics/SpawnsShort"), new DisplayValueHeader("Scores", "Statistics/Scores", "Statistics/ScoresShort")
-
-];
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
-
+room.PopUp() = "HTEKI"
 // конфигурация инвентаря
 peace.set_editor_inventory();
 
