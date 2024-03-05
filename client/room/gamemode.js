@@ -1,4 +1,4 @@
-import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns } from 'pixel_combats/room';
+import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, PopUp } from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 
