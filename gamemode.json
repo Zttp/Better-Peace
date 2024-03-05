@@ -20,7 +20,18 @@
           "Name": "BlueTeam",
           "DisplayName": "Команда 2",
           "Default": true
-
-        }
-   {
+        {
+        "Name": "PartialDesruction",
+        "DisplayName": "GmParams/PartialDesruction"
+      },
+      {
+        "Name": "LoosenBlocks",
+        "DisplayName": "GmParams/LoosenBlocks"
+      },
+      {
+        "Name": "FriendlyFire",
+        "DisplayName": "GmParams/FriendlyFire"
+      }
+    ]
+  }
 }
