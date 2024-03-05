@@ -20,7 +20,6 @@ Damage.GetContext().DamageOut.Value = true;
 
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
-p.Properties.Get("rid").Value = p.IdInRoom
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
