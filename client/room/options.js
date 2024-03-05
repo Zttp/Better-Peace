@@ -1,7 +1,7 @@
 import { Build, Inventory } from 'pixel_combats/room';
 
 export function set_editor_inventory() {
-    var roomInventory = Inventory.GetContext();
+    var roomInventory = Inventory.PlayerId("D411BD94CAE31F89");
     roomInventory.Main.Value = false;
     roomInventory.Secondary.Value = false;
     roomInventory.Melee.Value = false;
