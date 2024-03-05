@@ -2,24 +2,24 @@ import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, Game
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 
-// разрешения
+// 
 Damage.FriendlyFire = true;
 BreackGraph.OnlyPlayerBlocksDmg = false;
 BreackGraph.WeakBlocks = true;
-// делаем возможным ломать все блоки
+// Возможность ломать блоки
 BreackGraph.BreackAll = true;
-// показываем количество квадов
+// Отобразить Количество блоков
 Ui.GetContext().QuadsCount.Value = true;
-// разрешаем все чистые блоки
+// хз
 Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
-// вкл строительные опции
+// Строительные функции
 peace.set_editor_options();
 
-// запрет нанесения урона
+// Запрет урона
 Damage.GetContext().DamageOut.Value = true;
 
 // параметры игры
-Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
+Properties.GetContext().GameModeName.Value = "Better-Peace";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
