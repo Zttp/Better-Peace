@@ -35,7 +35,6 @@ LeaderBoard.PlayerLeaderBoardValues = [
 
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
-room.PopUp() - "stopit";
 // конфигурация инвентаря
 peace.set_editor_inventory();
 
