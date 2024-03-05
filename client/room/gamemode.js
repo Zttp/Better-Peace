@@ -31,8 +31,6 @@ Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); })
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 
-LeaderBoard.PlayerLeaderBoardValues = [
-
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
 // конфигурация инвентаря
