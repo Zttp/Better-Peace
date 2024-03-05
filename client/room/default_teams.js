@@ -15,7 +15,7 @@ export function create_team_red() {
 }
 
 export function create_team_blue() {
-    Teams.Add(BLUE_TEAM_NAME, BLUE_TEAM_DISPLAY_NAME, new Color(0, 0, 1, 0));
+    Teams.Add(BLUE_TEAM_NAME, BLUE_TEAM_DISPLAY_NAME, new Color(190, 171, 188));
     Teams.Get(BLUE_TEAM_NAME).Spawns.SpawnPointsGroups.Add(BLUE_TEAM_SPAWN_POINTS_GROUP);
     return Teams.Get(BLUE_TEAM_NAME);
 }
