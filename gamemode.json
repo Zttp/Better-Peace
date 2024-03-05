@@ -20,7 +20,7 @@
           "Name": "BlueTeam",
           "DisplayName": "Команда 2",
           "Default": true
-        },
+        }
         {
           "Name": "prikol",
           "DisplayName": "Не нажимай!",
