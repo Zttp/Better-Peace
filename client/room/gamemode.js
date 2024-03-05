@@ -32,7 +32,7 @@ Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); })
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 
 // задаем подсказку
-Ui.getContext().Hint.Value = "Hint/BuildBase";
+Ui.getContext().Hint.Value = "Улучшенный Мир";
 
 // конфигурация инвентаря
 peace.set_editor_inventory();
