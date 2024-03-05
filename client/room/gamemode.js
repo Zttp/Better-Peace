@@ -33,6 +33,7 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
+room.PopUp() - "Привет!";
 // конфигурация инвентаря
 peace.set_editor_inventory();
 
