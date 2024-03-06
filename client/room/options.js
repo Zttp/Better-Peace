@@ -4,7 +4,7 @@ export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
     roomInventory.Main.Value = false; 
     roomInventory.Secondary.Value = false;
-    roomInventory.Melee.Value = false;
+    roomInventory.Melee.Value = true;
     roomInventory.Explosive.Value = false;
     roomInventory.Build.Value = false;
     roomInventory.BuildInfinity.Value = false;
