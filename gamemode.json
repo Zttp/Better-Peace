@@ -17,19 +17,19 @@
           "Default": true
         },
         {
-          "Name": "RedTeam",
-          "DisplayName": "Teams/Red",
-          "Default": true
+          "Name": "WeakBlocks",
+          "DisplayName": "Хрупкие Блоки",
+          "Default": false
         },
         {
-          "Name": "RedTeam",
-          "DisplayName": "Teams/Red",
-          "Default": true
+          "Name": "FlyEnable",
+          "DisplayName": "Включить Полёт",
+          "Default": false
         },
         {
-          "Name": "RedTeam",
-          "DisplayName": "Teams/Red",
-          "Default": true
+          "Name": "OnlyPlayerBlocksDmg",
+          "DisplayName": "Неломаемые Блоки",
+          "Default": false
         },
         {
           "Name": "RedTeam",
