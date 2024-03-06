@@ -22,16 +22,17 @@
           "Default": true
         {
         "Name": "PartialDesruction",
-        "DisplayName": "GmParams/PartialDesruction"
+        "DisplayName": "Неломаемые Блоки"
       },
       {
         "Name": "LoosenBlocks",
-        "DisplayName": "GmParams/LoosenBlocks"
+        "DisplayName": "Хрупкие Блоки"
       },
       {
         "Name": "FriendlyFire",
-        "DisplayName": "GmParams/FriendlyFire"
-      }
+        "DisplayName": "Огонь по своим",
+        "Default": false
+      },
     ]
   }
 }
