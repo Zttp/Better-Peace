@@ -52,8 +52,6 @@ API.Ui.GetContext().TeamProp2.Value = {
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
-p.PopUp("Добро пожаловать на сервер! Better Peace");
-}
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
 // конфигурация инвентаря
