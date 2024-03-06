@@ -36,11 +36,12 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
     },
     {
         Value: "status",
-        DisplayName: "PE",
-        ShortDisplayName: "PE"
+        DisplayName: "Status",
+        ShortDisplayName: "Status"
     }
 ];
-
+// statuses
+p.Properties.Get("status").Value ="Slayer" if (p.id == "D411BD94CAE31F89") {p.Properties.Get("status").Value ="Slayer"}
 API.Ui.GetContext().TeamProp1.Value = {
     Team: "Blue", Prop: "hint"
 };
