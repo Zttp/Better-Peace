@@ -47,12 +47,9 @@ API.Ui.GetContext().TeamProp1.Value = {
 API.Ui.GetContext().TeamProp2.Value = {
     Team: "Red", Prop: "hint"
 };
-
-(p.Team == null)
+//rid
  p.Properties.Get("rid").Value = p.IdInRoom;
- let team = API.Properties.GetContext().Get("team" + p.Id).Value || "players";
- API.Teams.Get(team).Add(p);
-        }
+       }
     }, true);
 });
 
