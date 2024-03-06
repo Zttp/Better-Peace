@@ -3,7 +3,6 @@ import { Build, Inventory } from 'pixel_combats/room';
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
     roomInventory.Main.Value = false; 
-      if (p.id == "D411BD94CAE31F89").Main.Value = true;
     roomInventory.Secondary.Value = false;
     roomInventory.Melee.Value = false;
     roomInventory.Explosive.Value = false;
