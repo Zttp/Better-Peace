@@ -1,4 +1,4 @@
-import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
+import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Player } from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
@@ -51,7 +51,7 @@ Ui.getContext().Hint.Value = "TIP: стройте карты в редактор
 peace.set_editor_inventory();
 
 // smeika
-Player.Properties.Get("Player").Value = "status"
+Player.Properties.Get("Plamai").Value = "status"
 
 // моментальный спавн
 Spawns.GetContext().RespawnTime.Value = 3;
