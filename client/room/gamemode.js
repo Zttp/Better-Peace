@@ -31,7 +31,8 @@ export function apply_room_options() {
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
-    API.GameMode.Parameters.GetBool("1hp")) API.contextedProperties.GetContext().MaxHp.Value = 1;
+    room.contextedProperties.GetContext().MaxHp.Value = 1;
+}
 }
 
 // Запрет урона
