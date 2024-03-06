@@ -1,6 +1,7 @@
 import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
+import * as API from 'pixel_combats/room';
 
 // 
 Damage.FriendlyFire = true;
@@ -26,6 +27,27 @@ var blue = GameMode.Parameters.GetBool("BlueTeam");
 if (red || !red && !blue) teams.create_team_red();
 if (blue || !red && !blue) teams.create_team_blue();
 
+// leaderboard
+API.LeaderBoard.PlayerLeaderBoardValues = [
+    {
+        Value: "rid",
+        DisplayName: "<B>r</B>аid",
+        ShortDisplayName: "<B>r</B>id"
+    },
+    {
+        Value: "status",
+        DisplayName: "<B>S</B>tatus",
+        ShortDisplayName: "<B>S</B>tatus"
+    }
+];
+
+API.Ui.GetContext().TeamProp1.Value = {
+    Team: "Zttp", Prop: "hint"
+};
+API.Ui.GetContext().TeamProp2.Value = {
+    Team: "Zttp", Prop: "hint"
+};
+  
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
