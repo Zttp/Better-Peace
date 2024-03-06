@@ -32,8 +32,8 @@
           "Default": false
         },
         {
-          "Name": "BlueTeam",
-          "DisplayName": "Teams/Blue",
+          "Name": "1hp",
+          "DisplayName": "1hp",
           "Default": true
         }
       ]
