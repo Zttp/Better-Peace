@@ -14,7 +14,7 @@ export function set_editor_options() {
     Build.GetContext().Pipette.Value = true;
     Build.GetContext().FloodFill.Value = false;
     Build.GetContext().FillQuad.Value = false;
-    Build.GetContext().RemoveQuad.Value = true;
+    Build.GetContext().RemoveQuad.Value = false;
     Build.GetContext().BalkLenChange.Value = false;
     Build.GetContext().FlyEnable.Value = false;
     Build.GetContext().SetSkyEnable.Value = false;
