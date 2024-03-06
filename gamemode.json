@@ -32,8 +32,8 @@
           "Default": false
         },
         {
-          "Name": "MaxHp",
-          "DisplayName": "1hp",
+          "Name": "Zombie",
+          "DisplayName": "zombo",
           "Default": true
         }
       ]
