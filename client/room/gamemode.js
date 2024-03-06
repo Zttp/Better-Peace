@@ -1,4 +1,4 @@
-import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Deaths} from 'pixel_combats/room';
+import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
@@ -31,6 +31,7 @@ export function apply_room_options() {
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
+    if (API.GameMode.Parameters.GetBool("1hp")) API.contextedProperties.GetContext().MaxHp.Value = 1;
 }
 
 // Запрет урона
