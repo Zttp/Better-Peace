@@ -51,7 +51,7 @@ Ui.getContext().Hint.Value = "TIP: стройте карты в редактор
 peace.set_editor_inventory();
 
 // smeika
-Player.Properties.Get("Player").Value = "Player"
+Player.Properties.Get("Player").Value = "status"
 
 // моментальный спавн
 Spawns.GetContext().RespawnTime.Value = 3;
