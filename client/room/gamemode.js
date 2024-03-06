@@ -14,15 +14,7 @@ Ui.GetContext().QuadsCount.Value = true;
 // хз
 Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
 // Строительные функции
-peace.set_editor_options();
-
-API.Teams.OnPlayerChangeTeam.Add(function (p) 
-        p.Spawns.Spawn();
-        p.Spawns.Spawn();
-        p.PopUp("<B><size=55></size><size=20>Добро пожаловать на сервер!</size>\nГайд по режиму ищите в тг канале t.me/pixel_combats2 по тегу #bettereditor</B>");
-    }
-});
-
+peace.set_editor_options(); 
 // задает опции режима мир, выбранные при создании комнаты
 export function apply_room_options() {
     const gameModeParameters = room.GameMode.Parameters;
@@ -69,9 +61,11 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
+Teams.Teams.OnPlayerChangeTeam.Add(function (player, team) { team.Change(player); });
 // задаем подсказку
 Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире";
-Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
+if
+  Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
 // конфигурация инвентаря
 peace.set_editor_inventory();
 // моментальный спавн
