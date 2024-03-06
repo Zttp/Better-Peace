@@ -42,12 +42,6 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
 ];
 // statuses
 p.Properties.Get("status").Value ="Slayer" if (p.id == "D411BD94CAE31F89") {p.Properties.Get("status").Value ="Slayer"}
-API.Ui.GetContext().TeamProp1.Value = {
-    Team: "Blue", Prop: "hint"
-};
-API.Ui.GetContext().TeamProp2.Value = {
-    Team: "Red", Prop: "hint"
-};
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
