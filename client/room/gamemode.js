@@ -48,10 +48,14 @@ API.Ui.GetContext().TeamProp2.Value = {
     Team: "Red", Prop: "hint"
 };
 
-HintTeam.Properties.Get("hint").Value = `Better Peace by zttp`;
-HintTeam.Properties.Get("hint").Value = `Better Peace by zttp`;
+(p.Team == null)
+ p.Properties.Get("rid").Value = p.IdInRoom;
+ let team = API.Properties.GetContext().Get("team" + p.Id).Value || "players";
+ API.Teams.Get(team).Add(p);
+        }
+    }, true);
 });
-  
+
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
