@@ -1,4 +1,4 @@
-import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
+import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Deaths} from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
@@ -31,8 +31,6 @@ export function apply_room_options() {
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
-    room.contextedProperties.GetContext().MaxHp.Value = 1;
-}
 }
 
 // Запрет урона
@@ -49,14 +47,14 @@ if (blue || !red && !blue) teams.create_team_blue();
 // leaderboard
 API.LeaderBoard.PlayerLeaderBoardValues = [
     {
-        Value: "rid",
-        DisplayName: "QU",
-        ShortDisplayName: "QU"
+        Value: "Deaths",
+        DisplayName: "Смерти",
+        ShortDisplayName: "Смерти"
     },
     {
-        Value: "status",
-        DisplayName: "Status",
-        ShortDisplayName: "Status"
+        Value: "Spawns",
+        DisplayName: "Спавны",
+        ShortDisplayName: "Спавны"
     }
 ];
 
