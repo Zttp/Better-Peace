@@ -32,7 +32,7 @@
           "Default": false
         },
         {
-          "Name": "1hp",
+          "Name": "MaxHp",
           "DisplayName": "1 жизнь",
           "Default": true
         },
