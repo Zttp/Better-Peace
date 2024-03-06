@@ -42,8 +42,7 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
 ];
 
 p.Properties.Get("status").Value = "пончито" ;
-    if (p.id == "D411BD94CAE31F89") {p.Properties.Get("status").Value = "sts"};
-
+    if (p.id == "D411BD94CAE31F89") {p.Properties.Get("status").Value = "sts"}
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
