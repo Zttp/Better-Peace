@@ -13,26 +13,14 @@
       "Bool": [
         {
           "Name": "RedTeam",
-          "DisplayName": "Команда 1",
+          "DisplayName": "Teams/Red",
           "Default": true
         },
         {
           "Name": "BlueTeam",
-          "DisplayName": "Команда 2",
+          "DisplayName": "Teams/Blue",
           "Default": true
-        {
-        "Name": "PartialDesruction",
-        "DisplayName": "Неломаемые Блоки"
-      },
-      {
-        "Name": "LoosenBlocks",
-        "DisplayName": "Хрупкие Блоки"
-      },
-      {
-        "Name": "FriendlyFire",
-        "DisplayName": "Огонь по своим",
-        "Default": false
-      },
-    ]
-  }
+        }
+      ]
+    }
 }
