@@ -31,13 +31,13 @@ if (blue || !red && !blue) teams.create_team_blue();
 API.LeaderBoard.PlayerLeaderBoardValues = [
     {
         Value: "rid",
-        DisplayName: "<B>r</B>аid",
-        ShortDisplayName: "<B>r</B>id"
+        DisplayName: "QU",
+        ShortDisplayName: "QU"
     },
     {
         Value: "status",
-        DisplayName: "<B>S</B>tatus",
-        ShortDisplayName: "<B>S</B>tatus"
+        DisplayName: "PE",
+        ShortDisplayName: "PE"
     }
 ];
 
@@ -53,7 +53,7 @@ Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); })
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 // задаем подсказку
-Ui.getContext().Hint.Value = "Улучшенный Мир";
+Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире", "TIP: если вы строите карту то лопата вам пригодится!";
 // конфигурация инвентаря
 peace.set_editor_inventory();
 
