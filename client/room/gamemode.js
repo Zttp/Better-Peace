@@ -41,7 +41,7 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
     }
 ];
 // statuses
-p.Properties.Get("status").Value ="Slayer" if (p.id == "D411BD94CAE31F89") {p.Properties.Get("status").Value ="Slayer"}
+p.Properties.Get("statuv").Value ="status" if (p.id == "D411BD94CAE31F89") {p.Properties.Get("statuv").Value ="status"}
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
