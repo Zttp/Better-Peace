@@ -32,11 +32,6 @@
           "Default": false
         },
         {
-          "Name": "MaxHp",
-          "DisplayName": "1 жизнь",
-          "Default": true
-        },
-        {
           "Name": "BlueTeam",
           "DisplayName": "Teams/Blue",
           "Default": true
