@@ -64,8 +64,7 @@ Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); })
 Teams.Teams.OnPlayerChangeTeam.Add(function (player, team) { team.Change(player); });
 // задаем подсказку
 Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире";
-if
-  Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
+Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
 // конфигурация инвентаря
 peace.set_editor_inventory();
 // моментальный спавн
