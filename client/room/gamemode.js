@@ -19,8 +19,7 @@ peace.set_editor_options();
 // Запрет урона
 Damage.GetContext().DamageOut.Value = true;
 
-red.Properties.Get("hint").Value = `top`;
-blue.Properties.Get("hint").Value = "top";
+Properties.Get("hint").Value = `top`;
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 // создаем команды
