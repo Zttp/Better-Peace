@@ -16,6 +16,23 @@ Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
 // Строительные функции
 peace.set_editor_options();
 
+// задает опции режима мир, выбранные при создании комнаты
+export function apply_room_options() {
+    const gameModeParameters = room.GameMode.Parameters;
+
+    // опции строительства
+    const buildContext = room.Build.GetContext();
+    buildContext.FloodFill.Value = gameModeParameters.GetBool("FloodFill");
+    buildContext.FillQuad.Value = gameModeParameters.GetBool("FillQuad");
+    buildContext.RemoveQuad.Value = gameModeParameters.GetBool("RemoveQuad");
+    buildContext.FlyEnable.Value = gameModeParameters.GetBool("Fly");
+
+    // прочие опции
+    room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
+    room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
+    room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
+}
+
 // Запрет урона
 Damage.GetContext().DamageOut.Value = true;
 
