@@ -17,6 +17,26 @@
           "Default": true
         },
         {
+          "Name": "RedTeam",
+          "DisplayName": "Teams/Red",
+          "Default": true
+        },
+        {
+          "Name": "RedTeam",
+          "DisplayName": "Teams/Red",
+          "Default": true
+        },
+        {
+          "Name": "RedTeam",
+          "DisplayName": "Teams/Red",
+          "Default": true
+        },
+        {
+          "Name": "RedTeam",
+          "DisplayName": "Teams/Red",
+          "Default": true
+        },
+        {
           "Name": "BlueTeam",
           "DisplayName": "Teams/Blue",
           "Default": true
