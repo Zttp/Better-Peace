@@ -32,8 +32,8 @@
           "Default": false
         },
         {
-          "Name": "RedTeam",
-          "DisplayName": "Teams/Red",
+          "Name": "1hp",
+          "DisplayName": "1 жизнь",
           "Default": true
         },
         {
