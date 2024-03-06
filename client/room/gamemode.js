@@ -26,7 +26,7 @@ export function apply_room_options() {
     buildContext.RemoveQuad.Value = gameModeParameters.GetBool("RemoveQuad");
     buildContext.FlyEnable.Value = gameModeParameters.GetBool("Fly");
 
-    contextedProperties.GetContext().SkinType.Value = 1 = gameModeParameters.GetBool("Zombie");
+    contextedProperties.GetContext().SkinType.Value = 2 = gameModeParameters.GetBool("Zombie");
     
     // прочие опции
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
