@@ -47,16 +47,13 @@ API.Ui.GetContext().TeamProp1.Value = {
 API.Ui.GetContext().TeamProp2.Value = {
     Team: "Red", Prop: "hint"
 };
-//rid
- p.Properties.Get("rid").Value = p.IdInRoom;
-       }
-    }, true);
-});
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
+p.PopUp("Добро пожаловать на сервер! Better Peace");
+}
 // задаем подсказку
 Ui.getContext().Hint.Value = "Улучшенный Мир";
 // конфигурация инвентаря
