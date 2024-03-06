@@ -19,6 +19,8 @@ peace.set_editor_options();
 // Запрет урона
 Damage.GetContext().DamageOut.Value = true;
 
+red.Properties.Get("hint").Value = `top`;
+blue.Properties.Get("hint").Value = "top";
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 // создаем команды
@@ -49,7 +51,5 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире", "TIP: если вы строите карту то лопата вам пригодится!";
 // конфигурация инвентаря
 peace.set_editor_inventory();
-// smeika
-Player.Properties.Get("sta").Value = "status";
 // моментальный спавн
 Spawns.GetContext().RespawnTime.Value = 3;
