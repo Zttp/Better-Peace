@@ -26,8 +26,6 @@ export function apply_room_options() {
     buildContext.FillQuad.Value = gameModeParameters.GetBool("FillQuad");
     buildContext.RemoveQuad.Value = gameModeParameters.GetBool("RemoveQuad");
     buildContext.FlyEnable.Value = gameModeParameters.GetBool("Fly");
-
-    HintTeam.Properties.Get("hint").Value = `это'
     
     // прочие опции
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
