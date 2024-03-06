@@ -25,13 +25,13 @@ export function apply_room_options() {
     buildContext.FillQuad.Value = gameModeParameters.GetBool("FillQuad");
     buildContext.RemoveQuad.Value = gameModeParameters.GetBool("RemoveQuad");
     buildContext.FlyEnable.Value = gameModeParameters.GetBool("Fly");
+
+    contextedProperties.GetContext().SkinType.Value = 1
     
     // прочие опции
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
-    API.GameMode.Parameters.GetBool("1hp")) API.contextedProperties.GetContext().MaxHp.Value = 1;
-    API.GameMode.Parameters.GetBool("Zombie")) API.contextedProperties.GetContext().SkinType.Value = 1;
 }
 
 // Запрет урона
