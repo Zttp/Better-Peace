@@ -19,7 +19,6 @@ peace.set_editor_options();
 // Запрет урона
 Damage.GetContext().DamageOut.Value = true;
 
-Properties.Get("hint").Value = `top`;
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 // создаем команды
@@ -47,7 +46,8 @@ Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); })
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 // задаем подсказку
-Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире", "TIP: если вы строите карту то лопата вам пригодится!";
+Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире";
+Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
 // конфигурация инвентаря
 peace.set_editor_inventory();
 // моментальный спавн
