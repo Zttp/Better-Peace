@@ -42,11 +42,15 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
 ];
 
 API.Ui.GetContext().TeamProp1.Value = {
-    Team: "Zttp", Prop: "hint"
+    Team: "Blue", Prop: "hint"
 };
 API.Ui.GetContext().TeamProp2.Value = {
-    Team: "Zttp", Prop: "hint"
+    Team: "Red", Prop: "hint"
 };
+
+HintTeam.Properties.Get("hint").Value = `Better Peace by zttp`;
+HintTeam.Properties.Get("hint").Value = `Better Peace by zttp`;
+});
   
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
