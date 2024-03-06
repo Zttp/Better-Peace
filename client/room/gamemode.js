@@ -60,9 +60,9 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
 ];
 
 // разрешаем вход в команды по запросу
-room.Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
-// ррора
-room.Teams.OnPlayerChangeTeam.Add(function (player) { player.Spawns.Spawn() });
+Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
+// спавн по входу в команду
+Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 // задаем подсказку
 Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире";
 Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
