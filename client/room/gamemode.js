@@ -51,7 +51,7 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	new DisplayValueHeader("Kills", "<color=red>Убийства</a>", "<color=red>Убийства</a>"),
 	new DisplayValueHeader("Deaths", "<color=orange>Смерти</a>", "<color=orange>Смерти</a>"),
 	new DisplayValueHeader("Spawns", "<color=yellow>Спавны</a>", "<color=yellow>Спавны</a>"),
-	new DisplayValueHeader("Scores", "<color=lime>Очки</a>", "<color=green>Очки</a>")
+	new DisplayValueHeader("Status", "<color=lime>Статус</a>", "<color=green>Статус</a>")
 ];
 LeaderBoard.TeamLeaderBoardValue = new DisplayValueHeader("Deaths", "Statistics\Deaths", "Statistics\Deaths");
 // ��� ������� � ����������
@@ -71,11 +71,6 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 Spawns.OnSpawn.Add(function (player) {
 	++player.Properties.Spawns.Value;
 });
-// ������� �������
-Damage.OnKill.Add(function (player, killed) {
-	if (killed.Team != null && killed.Team != player.Team) {
-		++player.Properties.Kills.Value;
-		player.Properties.Scores.Value += 100;
 // ������� �������
 Damage.OnDeath.Add(function (player) {
 	++player.Properties.Deaths.Value;
