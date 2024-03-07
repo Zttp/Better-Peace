@@ -52,6 +52,7 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	new DisplayValueHeader("Deaths", "<color=orange>Смерти</a>", "<color=orange>Смерти</a>"),
 	new DisplayValueHeader("Spawns", "<color=yellow>Спавны</a>", "<color=yellow>Спавны</a>"),
 	new DisplayValueHeader("Status", "<color=lime>Статус</a>", "<color=green>Статус</a>")
+        new DisplayValueHeader("Hint", "<color=lime>No</a>", "<color=green>No</a>")
 ];
 LeaderBoard.TeamLeaderBoardValue = new DisplayValueHeader("Deaths", "Statistics\Deaths", "Statistics\Deaths");
 // ��� ������� � ����������
@@ -64,7 +65,7 @@ LeaderBoard.PlayersWeightGetter.Set(function (player) {
 });
 
 // а может просто негром стать
-Player.Properties.Get("status").Value = "status";
+Player.Properties.Get("Status").Value = "status";
 });
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
