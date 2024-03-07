@@ -1,5 +1,5 @@
 import { DisplayValueHeader } from 'pixel_combats/basic';
-import { Build, PopUp, BuildBlocksSet, Teams, LeaderBoard, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
+import { Build, BuildBlocksSet, Teams, LeaderBoard, Player, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
@@ -63,6 +63,9 @@ LeaderBoard.PlayersWeightGetter.Set(function (player) {
 	return player.Properties.Get("Kills").Value;
 });
 
+// а может просто негром стать
+Player.Properties.Get("status").Value = "status";
+
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
@@ -70,7 +73,6 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 // ������� �������
 Spawns.OnSpawn.Add(function (player) {
 	++player.Properties.Spawns.Value;
-	p.PopUp("Vick");
 });
 // ������� �������
 Damage.OnDeath.Add(function (player) {
