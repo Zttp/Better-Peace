@@ -64,9 +64,7 @@ LeaderBoard.PlayersWeightGetter.Set(function (player) {
 	return player.Properties.Get("Kills").Value;
 });
 
-// а может просто негром стать
-Player.Properties.Get("Status").Value = "status";
-});
+contextedProperties.GetContext().SkinType.Value = 2
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
