@@ -68,8 +68,6 @@ Damage.OnDeath.Add(function (player) {
 	++player.Properties.Deaths.Value;
 });
 
-// скин зека
-contextedProperties.GetContext().SkinType.Value = 2
 // задаем подсказку
 Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире";
 Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
