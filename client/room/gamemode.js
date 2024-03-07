@@ -41,8 +41,6 @@ Damage.GetContext().DamageOut.Value = true;
 
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
-// статус настройка
-Properties.Get('Status').Value = "admin"
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
@@ -54,7 +52,7 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	new DisplayValueHeader("Kills", "<color=red>Убийства</a>", "<color=red>Убийства</a>"),
 	new DisplayValueHeader("Deaths", "<color=orange>Смерти</a>", "<color=orange>Смерти</a>"),
 	new DisplayValueHeader("Spawns", "<color=yellow>Спавны</a>", "<color=yellow>Спавны</a>"),
-	new DisplayValueHeader("Status", "<color=lime>Status</a>", "<color=green>Status</a>")
+	new DisplayValueHeader("", "<color=lime>qupe</a>", "<color=green>qupe</a>")
 ];
 
 // разрешаем вход в команды по запросу
