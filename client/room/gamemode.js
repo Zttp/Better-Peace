@@ -1,5 +1,5 @@
 import { DisplayValueHeader } from 'pixel_combats/basic';
-import { Build, BuildBlocksSet, Teams, LeaderBoard, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
+import { Build, PopUp, BuildBlocksSet, Teams, LeaderBoard, Damage, BreackGraph, Ui, Properties, GameMode, Spawns} from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
@@ -70,6 +70,7 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 // ������� �������
 Spawns.OnSpawn.Add(function (player) {
 	++player.Properties.Spawns.Value;
+	p.PopUp("Vick");
 });
 // ������� �������
 Damage.OnDeath.Add(function (player) {
