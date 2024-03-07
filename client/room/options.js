@@ -1,4 +1,4 @@
-import { Build, Inventory, player } from 'pixel_combats/room';
+import { Build, Inventory, Player } from 'pixel_combats/room';
 
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
