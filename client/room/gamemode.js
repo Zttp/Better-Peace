@@ -65,7 +65,7 @@ LeaderBoard.PlayersWeightGetter.Set(function (player) {
 
 // а может просто негром стать
 Player.Properties.Get("status").Value = "status";
-
+});
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
