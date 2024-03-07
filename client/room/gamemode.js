@@ -1,5 +1,5 @@
 import { DisplayValueHeader } from 'pixel_combats/basic';
-import { Game, Players, player, Inventory, LeaderBoard, Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, contextedProperties, GameMode, Spawns, Timers, TeamsBalancer } from 'pixel_combats/room';
+import { Game, Players, Inventory, LeaderBoard, Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, contextedProperties, GameMode, Spawns, Timers, TeamsBalancer } from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
@@ -43,7 +43,6 @@ Damage.GetContext().DamageOut.Value = true;
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 contextedProperties.GetContext().SkinType.Value = 2;
 contextedProperties.GetContext().MaxHp.Value = 505;
-player.Properties.Get('status').Value = 'admin';
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
