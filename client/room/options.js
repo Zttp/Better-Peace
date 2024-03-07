@@ -1,9 +1,9 @@
-import { Build, Inventory, Player } from 'pixel_combats/room';
+import { Build, Inventory, Player} from 'pixel_combats/room';
 
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
     roomInventory.Main.Value = false; 
-      if (Player.id == "D411BD94CAE31F89").Inventory.Main.Value = true;
+      if (Player.id == "D411BD94CAE31F89").roomInventory.Main.Value = true;
     roomInventory.Secondary.Value = false;
     roomInventory.Melee.Value = true;
     roomInventory.Explosive.Value = false;
