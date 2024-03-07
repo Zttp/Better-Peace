@@ -42,7 +42,6 @@ Damage.GetContext().DamageOut.Value = true;
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 // статус настройка
-if (p.id == "D411BD94CAE31F89")
 p.Properties.Get('Status').Value = "admin";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
@@ -65,10 +64,6 @@ Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); })
 // ������� �������
 Spawns.OnSpawn.Add(function (player) {
 	++player.Properties.Spawns.Value;
-});
-// ������� �������
-Status.OnStatus.Add(function (player) {
-	++player.Properties.Status.Value;
 });
 // ������� �������
 Damage.OnDeath.Add(function (player) {
