@@ -4,7 +4,6 @@ import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
 import * as room from 'pixel_combats/room';
-import * as player from './default_teams.js';
 // 
 Damage.FriendlyFire = true;
 BreackGraph.OnlyPlayerBlocksDmg = false;
@@ -43,7 +42,7 @@ Damage.GetContext().DamageOut.Value = true;
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 contextedProperties.GetContext().SkinType.Value = 2;
 contextedProperties.GetContext().MaxHp.Value = 505;
-player.Properties.Get('status').Value = 'admin';
+(player) Properties.Get('status').Value = 'admin';
 });
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
