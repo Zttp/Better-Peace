@@ -45,23 +45,22 @@ var blue = GameMode.Parameters.GetBool("BlueTeam");
 if (red || !red && !blue) teams.create_team_red();
 if (blue || !red && !blue) teams.create_team_blue();
 
-// leaderboard
-API.LeaderBoard.PlayerLeaderBoardValues = [
-    {
-        Value: "Deaths",
-        DisplayName: "Смерти",
-        ShortDisplayName: "Смерти"
-    },
-    {
-        Value: "Spawns",
-        DisplayName: "Спавны",
-        ShortDisplayName: "Спавны"
-    }
+// настраиваем параметры, которые нужно выводить в лидерборде
+LeaderBoard.PlayerLeaderBoardValues = [
+	new DisplayValueHeader("Kills", "Statistics/Kills", "Statistics/KillsShort"),
+	new DisplayValueHeader("Deaths", "Statistics/Deaths", "Statistics/DeathsShort"),
+	new DisplayValueHeader("Spawns", "Statistics/Spawns", "Statistics/SpawnsShort"),
+	new DisplayValueHeader("Scores", "Statistics/Scores", "Statistics/ScoresShort")
 ];
-
-//82919
+LeaderBoard.TeamLeaderBoardValue = new DisplayValueHeader("Deaths", "Statistics\Deaths", "Statistics\Deaths");
+// ��� ������� � ����������
 LeaderBoard.TeamWeightGetter.Set(function (team) {
 	return team.Properties.Get("Deaths").Value;
+});
+// ��� ������ � ����������
+LeaderBoard.PlayersWeightGetter.Set(function (player) {
+	return player.Properties.Get("Kills").Value;
+});
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
