@@ -67,6 +67,14 @@ LeaderBoard.PlayersWeightGetter.Set(function (player) {
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
+// ������� �������
+Spawns.OnSpawn.Add(function (player) {
+	++player.Properties.Spawns.Value;
+});
+// ������� �������
+Damage.OnDeath.Add(function (player) {
+	++player.Properties.Deaths.Value;
+});
 // задаем подсказку
 Ui.getContext().Hint.Value = "TIP: стройте карты в редакторе, а не в мире";
 Ui.getContext().Hint.Value = "TIP: используй лопату , если строишь карту";
