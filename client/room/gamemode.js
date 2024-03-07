@@ -51,18 +51,9 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	new DisplayValueHeader("Kills", "<color=red>Убийства</a>", "<color=red>Убийства</a>"),
 	new DisplayValueHeader("Deaths", "<color=orange>Смерти</a>", "<color=orange>Смерти</a>"),
 	new DisplayValueHeader("Spawns", "<color=yellow>Спавны</a>", "<color=yellow>Спавны</a>"),
-	new DisplayValueHeader("Status", "<color=lime>Статус</a>", "<color=green>Статус</a>")
-        new DisplayValueHeader("Hint", "<color=lime>No</a>", "<color=green>No</a>")
+	new DisplayValueHeader("Scores", "<color=lime>Очки</a>", "<color=green>Очки</a>")
 ];
-LeaderBoard.TeamLeaderBoardValue = new DisplayValueHeader("Deaths", "Statistics\Deaths", "Statistics\Deaths");
-// ��� ������� � ����������
-LeaderBoard.TeamWeightGetter.Set(function (team) {
-	return team.Properties.Get("Deaths").Value;
-});
-// ��� ������ � ����������
-LeaderBoard.PlayersWeightGetter.Set(function (player) {
-	return player.Properties.Get("Kills").Value;
-});
+
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
