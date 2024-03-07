@@ -67,6 +67,10 @@ Spawns.OnSpawn.Add(function (player) {
 	++player.Properties.Spawns.Value;
 });
 // ������� �������
+Status.OnStatus.Add(function (player) {
+	++player.Properties.Status.Value;
+});
+// ������� �������
 Damage.OnDeath.Add(function (player) {
 	++player.Properties.Deaths.Value;
 });
