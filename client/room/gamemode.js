@@ -41,9 +41,9 @@ Damage.GetContext().DamageOut.Value = true;
 
 // параметры игры
 Properties.GetContext().GameModeName.Value = "Better-Peace";
-
-if (player.id == "D411BD94CAE31F89")
-player.Properties.Get('Status').Value = "admin";
+// статус настройка
+if (p.id == "D411BD94CAE31F89")
+p.Properties.Get('Status').Value = "admin";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
