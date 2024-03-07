@@ -59,6 +59,10 @@ API.LeaderBoard.PlayerLeaderBoardValues = [
     }
 ];
 
+//82919
+LeaderBoard.TeamWeightGetter.Set(function (team) {
+	return team.Properties.Get("Deaths").Value;
+
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
