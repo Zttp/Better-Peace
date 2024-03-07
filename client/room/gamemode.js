@@ -4,6 +4,7 @@ import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as API from 'pixel_combats/room';
 import * as room from 'pixel_combats/room';
+import * as player from 'pixel_combats/room';
 
 // 
 Damage.FriendlyFire = true;
