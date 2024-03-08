@@ -1,14 +1,23 @@
 import { Build, Inventory } from 'pixel_combats/room';
 
-export function set_editor_inventory() {
-    var roomInventory = Inventory.GetContext();
-    roomInventory.Main.Value = false; 
-    roomInventory.Secondary.Value = false;
-    roomInventory.Melee.Value = true;
-    roomInventory.Explosive.Value = false;
-    roomInventory.Build.Value = false;
-    roomInventory.BuildInfinity.Value = false;
+// разрешает все что можно для строительства
+function set_inventory() {
+    const context = room.Inventory.GetContext();
+    context.Main.Value = false;
+    context.Secondary.Value = false;
+    context.Melee.Value = true;
+    context.Explosive.Value = false;
+    context.Build.Value = true;
+    context.BuildInfinity.Value = true;
 }
+
+// задает в контекст инвентаря пустой инвентарь
+function set_empty_inventory(inventory) {
+    inventory.Main.Value = false;
+    inventory.Secondary.Value = false;
+    inventory.Melee.Value = false;
+    inventory.Explosive.Value = false;
+    inventory.Build.Value = false;
 
 export function set_editor_options() {
     Build.GetContext().Pipette.Value = true;
