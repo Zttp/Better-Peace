@@ -1,41 +1,59 @@
 {
-    "Name": "<b><i><color=red>Better</a> <a>Peace</a></i></b> (API 2.0)",
-    "Description": "Режим мир улучшенный",
-    "StartClientVersion": 334,
-    "ApiVersion": 2,
-    "MapLists": [
-      {
-        "MapListId": 324,
-        "Name": "Оффициальные"
-      }
-    ],
-    "Parameters": {
-      "Bool": [
-        {
-          "Name": "RedTeam",
-          "DisplayName": "Команда Красных",
-          "Default": true
-        },
-        {
-          "Name": "BlueTeam",
-          "DisplayName": "Команда Синих",
-          "Default": true
-        },
-        {
-          "Name": "FlyEnable",
-          "DisplayName": "Включить Полёт",
-          "Default": true
-        },
-        {
-          "Name": "OnlyPlayerBlocksDmg",
-          "DisplayName": "Неломаемые Блоки",
-          "Default": true
-        },
-        {
-          "Name": "Zombie",
-          "DisplayName": "ничего",
-          "Default": true
-        }
-      ]
+  "ApiVersion": 2,
+  "Name": "<b><i><color=red>Better</a> <a>Peace</a></i></b> (API 2.0)",
+  "Description": "Улучшенный режим мир",
+  "StartClientVersion": 532,
+  "MapLists": [
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
     }
+  ],
+  "Parameters": {
+    "Bool": [
+      {
+        "Name": "Damage",
+        "DisplayName": "Урон По Игрокам"
+      },
+      {
+        "Name": "PartialDesruction",
+        "DisplayName": ""
+      },
+      {
+        "Name": "LoosenBlocks",
+        "DisplayName": "Хрупкие Блоки"
+      },
+      {
+        "Name": "RedTeam",
+        "DisplayName": "Команда Строителей",
+        "Default": true
+      },
+      {
+        "Name": "BlueTeam",
+        "DisplayName": "Команда Игроков",
+        "Default": true
+      },
+      {
+        "Name": "BlueHasNothing",
+        "DisplayName": "Игроки без оружия"
+      },
+      {
+        "Name": "FloodFill",
+        "DisplayName": "Полная заливка"
+      },
+      {
+        "Name": "FillQuad",
+        "DisplayName": "Заливка части"
+      },
+      {
+        "Name": "RemoveQuad",
+        "DisplayName": "Инструмент удаляющий часть карты"
+      },
+      {
+        "Name": "Fly",
+        "DisplayName": "GmParams/Fly",
+        "Default": true
+      }
+    ]
+  }
 }
