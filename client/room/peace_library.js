@@ -88,15 +88,15 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	new DisplayValueHeader("Kills", "Убийства", "Убийства"),
 	new DisplayValueHeader("Deaths", "Смерти", "Смерти"),
 	new DisplayValueHeader("Spawns", "Спавны", "Спавны"),
-	new DisplayValueHeader("", "Qupe", "qupe")
+	new DisplayValueHeader("Status", "Qupe", "qupe")
 ];
 
-// ������� �������
-Spawns.OnSpawn.Add(function (player) {
+     // ������� �������
+     Spawns.OnSpawn.Add(function (player) {
 	++player.Properties.Spawns.Value;
 });
-// ������� �������
-Damage.OnDeath.Add(function (player) {
+     // ������� �������
+    Damage.OnDeath.Add(function (player) {
 	++player.Properties.Deaths.Value;
 });
 
