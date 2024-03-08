@@ -13,27 +13,27 @@
       "Bool": [
         {
           "Name": "RedTeam",
-          "DisplayName": "Teams/Red",
+          "DisplayName": "Команда Красных",
           "Default": true
         },
         {
-          "Name": "WeakBlocks",
-          "DisplayName": "Хрупкие Блоки",
-          "Default": false
+          "Name": "BlueTeam",
+          "DisplayName": "Команда Синих",
+          "Default": true
         },
         {
           "Name": "FlyEnable",
           "DisplayName": "Включить Полёт",
-          "Default": false
+          "Default": true
         },
         {
           "Name": "OnlyPlayerBlocksDmg",
           "DisplayName": "Неломаемые Блоки",
-          "Default": false
+          "Default": true
         },
         {
           "Name": "Zombie",
-          "DisplayName": "zombo",
+          "DisplayName": "ничего",
           "Default": true
         }
       ]
