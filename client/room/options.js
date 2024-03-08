@@ -1,4 +1,6 @@
 import { Build, Inventory } from 'pixel_combats/room';
+import * as room from 'pixel_combats/room';
+import * as teams from './default_teams.js';
 
 // разрешает все что можно для строительства
 function set_inventory() {
