@@ -57,12 +57,14 @@ export function apply_room_options() {
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
     contextedProperties.GetContext().SkinType.Value = 2;
+    contextedProperties.GetContext().MaxHp.Value = 505;
+	
 }
 
 // задает настройки режима мир
 export function configure() {
-    room.Properties.GetContext().GameModeName.Value = "GameModes/Peace";// задаем название режима
-    room.Ui.GetContext().Hint.Value = "Hint/BuildBase";// выводим подсказку
+    room.Properties.GetContext().GameModeName.Value = "GameModes/BetterPeace";// задаем название режима
+    room.Ui.GetContext().Hint.Value = "Better Peace";// выводим подсказку
     room.Ui.GetContext().QuadsCount.Value = true;// выводим количество квадов на карте
     room.BreackGraph.BreackAll = true; // делаем так, чтобы можно было сломать любой блок
     room.Spawns.GetContext().RespawnTime.Value = 0; // убираем таймер респавна
