@@ -41,6 +41,9 @@ Damage.GetContext().DamageOut.Value = true;
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 contextedProperties.GetContext().SkinType.Value = 2;
 contextedProperties.GetContext().MaxHp.Value = 505;
+set_build_settings();
+    set_inventory();
+    apply_room_options();
 // p.Properties.Get("Status").Value = "player";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
