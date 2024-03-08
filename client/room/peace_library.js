@@ -1,3 +1,4 @@
+import { DisplayValueHeader } from 'pixel_combats/basic';
 import * as room from 'pixel_combats/room';
 import * as teams from './default_teams.js';
 
