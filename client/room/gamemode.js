@@ -38,18 +38,29 @@ export function apply_room_options() {
 Damage.GetContext().DamageOut.Value = true;
 
 // параметры игры
+export function configure() {
 Properties.GetContext().GameModeName.Value = "Better-Peace";
 contextedProperties.GetContext().SkinType.Value = 2;
 contextedProperties.GetContext().MaxHp.Value = 505;
 set_build_settings();
     set_inventory();
     apply_room_options();
-// p.Properties.Get("Status").Value = "player";
+}
+	
+export function create_teams() {	
 // создаем команды
-var red = GameMode.Parameters.GetBool("RedTeam");
-var blue = GameMode.Parameters.GetBool("BlueTeam");
-if (red || !red && !blue) teams.create_team_red();
-if (blue || !red && !blue) teams.create_team_blue();
+    const roomParameters = room.GameMode.Parameters;
+    const hasRedTeam = roomParameters.GetBool("RedTeam");
+    const hasBlueTeam = roomParameters.GetBool("BlueTeam");
+    if (hasRedTeam || !hasRedTeam && !hasBlueTeam) {
+        teams.create_team_red();
+    }
+    if (hasBlueTeam || !hasRedTeam && !hasBlueTeam) {
+        const blueTeam = teams.create_team_blue();
+        if (roomParameters.GetBool("BlueHasNothing")) {
+            set_empty_inventory(blueTeam.Inventory);
+        }
+    }
 
 // настраиваем параметры, которые нужно выводить в лидерборде
 LeaderBoard.PlayerLeaderBoardValues = [
