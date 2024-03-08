@@ -1,5 +1,5 @@
 import { DisplayValueHeader } from 'pixel_combats/basic';
-import { Game, Players, buildContext, Inventory, LeaderBoard, Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, contextedProperties, GameMode, Spawns, Timers, TeamsBalancer } from 'pixel_combats/room';
+import { Game, Players, Inventory, LeaderBoard, Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, contextedProperties, GameMode, Spawns, Timers, TeamsBalancer } from 'pixel_combats/room';
 import * as peace from './options.js';
 import * as teams from './default_teams.js';
 import * as room from 'pixel_combats/room';
