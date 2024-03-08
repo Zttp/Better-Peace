@@ -83,6 +83,23 @@ export function create_teams() {
         }
     }
 
+// настраиваем параметры, которые нужно выводить в лидерборде
+LeaderBoard.PlayerLeaderBoardValues = [
+	new DisplayValueHeader("Kills", "Убийства", "Убийства"),
+	new DisplayValueHeader("Deaths", "Смерти", "Смерти"),
+	new DisplayValueHeader("Spawns", "Спавны", "Спавны"),
+	new DisplayValueHeader("", "Qupe", "qupe")
+];
+
+// ������� �������
+Spawns.OnSpawn.Add(function (player) {
+	++player.Properties.Spawns.Value;
+});
+// ������� �������
+Damage.OnDeath.Add(function (player) {
+	++player.Properties.Deaths.Value;
+});
+
     // по запросу на вход в команду - кидаем игрока в команду
     room.Teams.OnRequestJoinTeam.Add(function (player, team) { team.Add(player); });
     // если игрок сменил команду или выбрал ее, то происходит спавн игрока
