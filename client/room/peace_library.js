@@ -59,7 +59,7 @@ export function apply_room_options() {
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
-    contextedProperties.GetContext().SkinType.Value = 2;
+    contextedProperties.GetContext().SkinType.Value = 1;
     contextedProperties.GetContext().MaxHp.Value = 505;
 	
 }
