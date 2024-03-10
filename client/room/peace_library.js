@@ -108,6 +108,17 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	++player.Properties.Deaths.Value;
 });
 
+var Kk = AreaPlayerTriggerService.Get('Kk');
+
+
+Kk.Tags = ['Kk'];
+Kk.Enable = true;
+Kk.OnEnter.Add(function(player,Area);
+{
+Game.RestartGame();	  
+});
+	
+
     // по запросу на вход в команду - кидаем игрока в команду
     room.Teams.OnRequestJoinTeam.Add(function (player, team) { team.Add(player); });
     // если игрок сменил команду или выбрал ее, то происходит спавн игрока
