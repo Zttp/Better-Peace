@@ -1,5 +1,5 @@
 import { DisplayValueHeader } from 'pixel_combats/basic';
-import { Game, Players, AreaPlayerTriggerService, Inventory, LeaderBoard, contextedProperties, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Timers, TeamsBalancer } from 'pixel_combats/room';
+import { Game, Players, Inventory, LeaderBoard, contextedProperties, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Timers, TeamsBalancer } from 'pixel_combats/room';
 import * as room from 'pixel_combats/room';
 import * as teams from './default_teams.js';
 
@@ -107,18 +107,7 @@ LeaderBoard.PlayerLeaderBoardValues = [
     Damage.OnDeath.Add(function (player) {
 	++player.Properties.Deaths.Value;
 });
-
-var Kk = AreaPlayerTriggerService.Get('Kk');
-
-
-Kk.Tags = ['Kk'];
-Kk.Enable = true;
-Kk.OnEnter.Add(function(player,Area);
-{
-Game.RestartGame();	  
-});
 	
-
     // по запросу на вход в команду - кидаем игрока в команду
     room.Teams.OnRequestJoinTeam.Add(function (player, team) { team.Add(player); });
     // если игрок сменил команду или выбрал ее, то происходит спавн игрока
