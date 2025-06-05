@@ -17,7 +17,7 @@
       },
       {
         "Name": "PartialDesruction",
-        "DisplayName": ""
+        "DisplayName": "Частичное Разрушение"
       },
       {
         "Name": "LoosenBlocks",
@@ -25,12 +25,12 @@
       },
       {
         "Name": "RedTeam",
-        "DisplayName": "Команда Строителей",
+        "DisplayName": "Команда Игроков 1",
         "Default": true
       },
       {
         "Name": "BlueTeam",
-        "DisplayName": "Команда Игроков",
+        "DisplayName": "Команда Игроков 2",
         "Default": true
       },
       {
@@ -51,7 +51,7 @@
       },
       {
         "Name": "Fly",
-        "DisplayName": "GmParams/Fly",
+        "DisplayName": "Полёт",
         "Default": true
       }
     ]
