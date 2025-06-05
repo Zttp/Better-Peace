@@ -59,8 +59,8 @@ export function apply_room_options() {
     room.Damage.GetContext().DamageOut.Value = gameModeParameters.GetBool("Damage");
     room.BreackGraph.OnlyPlayerBlocksDmg = gameModeParameters.GetBool("PartialDesruction");
     room.BreackGraph.WeakBlocks = gameModeParameters.GetBool("LoosenBlocks");
-    contextedProperties.GetContext().SkinType.Value = 1;
-    contextedProperties.GetContext().MaxHp.Value = 505;
+    contextedProperties.GetContext().SkinType.Value = 2;
+    contextedProperties.GetContext().MaxHp.Value = 100;
 	
 }
 
@@ -88,6 +88,7 @@ export function create_teams() {
         const blueTeam = teams.create_team_blue();
         if (roomParameters.GetBool("BlueHasNothing")) {
             set_empty_inventory(blueTeam.Inventory);
+	    set_empty_inventory(redTeam.Inventory);
         }
     }
 
@@ -96,7 +97,6 @@ LeaderBoard.PlayerLeaderBoardValues = [
 	new DisplayValueHeader("Kills", "Убийства", "Убийства"),
 	new DisplayValueHeader("Deaths", "Смерти", "Смерти"),
 	new DisplayValueHeader("Spawns", "Спавны", "Спавны"),
-	new DisplayValueHeader("Status", "Qupe", "qupe")
 ];
 
      // ������� �������
