@@ -3,8 +3,8 @@ import { Teams } from 'pixel_combats/room';
 
 export const RED_TEAM_NAME = "Red";
 export const BLUE_TEAM_NAME = "Blue";
-export const RED_TEAM_DISPLAY_NAME = "<i><b>Строители</b></i>";
-export const BLUE_TEAM_DISPLAY_NAME = "<i><b>Игроки</b></i>";
+export const RED_TEAM_DISPLAY_NAME = "Игроки";
+export const BLUE_TEAM_DISPLAY_NAME = "Игроки";
 export const BLUE_TEAM_SPAWN_POINTS_GROUP = 1;
 export const RED_TEAM_SPAWN_POINTS_GROUP = 2;
 
